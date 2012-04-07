@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <!-- Parent -->
-    <!--<parent>-->
-        <!--<groupId>org.jboss</groupId>-->
-        <!--<artifactId>jboss-parent</artifactId>-->
-        <!--<version>8</version>-->
-        <!--<relativePath/>-->
-    <!--</parent>-->
+    <parent>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>8</version>
+        <relativePath/>
+    </parent>
 
     <!-- Model Version -->
     <modelVersion>4.0.0</modelVersion>
@@ -25,7 +25,6 @@
         <!-- jboss-parent override -->
         <maven.compiler.argument.target>1.5</maven.compiler.argument.target>
         <maven.compiler.argument.source>1.5</maven.compiler.argument.source>
-
 
         <!-- External Deps -->
         <version.shrinkwrap_shrinkwrap>1.0.0-cr-1</version.shrinkwrap_shrinkwrap>
@@ -84,12 +83,6 @@
             <dependency>
                 <groupId>org.jboss.arquillian.container</groupId>
                 <artifactId>arquillian-container-spi</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.arquillian.extension</groupId>
-                <artifactId>arquillian-spring</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
