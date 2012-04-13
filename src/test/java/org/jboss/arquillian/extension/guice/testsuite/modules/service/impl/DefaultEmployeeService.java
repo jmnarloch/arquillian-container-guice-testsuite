@@ -24,6 +24,8 @@ import org.jboss.arquillian.extension.guice.testsuite.modules.service.EmployeeSe
 import java.util.List;
 
 /**
+ *  The default implementation of {@link EmployeeService}.
+ *
  * @author <a href="mailto:jmnarloch@gmail.com">Jakub Narloch</a>
  */
 public class DefaultEmployeeService implements EmployeeService {

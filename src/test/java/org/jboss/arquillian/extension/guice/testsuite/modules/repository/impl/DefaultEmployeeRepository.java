@@ -23,6 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * The default implementation of {@link EmployeeRepository}.
+ * 
  * @author <a href="mailto:jmnarloch@gmail.com">Jakub Narloch</a>
  */
 public class DefaultEmployeeRepository implements EmployeeRepository {

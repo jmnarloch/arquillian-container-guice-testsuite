@@ -43,7 +43,7 @@ import static org.junit.Assert.assertNotNull;
  */
 @RunWith(Arquillian.class)
 @GuiceConfiguration({EmployeeModule.class})
-public class DefaultEmployeeServiceTestSuite {
+public class DefaultEmployeeServiceTestCase {
 
     @Deployment
     public static JavaArchive createTestArchive() {
@@ -54,11 +54,17 @@ public class DefaultEmployeeServiceTestSuite {
                         EmployeeModule.class);
     }
 
+    /**
+     * <p>The injected {@link EmployeeService}.</p>
+     */
     @Inject
     private EmployeeService employeeService;
 
+    /**
+     * <p>Tests the {@link EmployeeService#getEmployees()}</p>
+     */
     @Test
-    public void testGetEmployees() throws Exception {
+    public void testGetEmployees() {
 
         List<Employee> result = employeeService.getEmployees();
 

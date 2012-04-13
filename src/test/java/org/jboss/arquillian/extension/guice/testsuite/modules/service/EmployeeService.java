@@ -21,6 +21,8 @@ import org.jboss.arquillian.extension.guice.testsuite.modules.Employee;
 import java.util.List;
 
 /**
+ * Employee service
+ *
  * @author <a href="mailto:jmnarloch@gmail.com">Jakub Narloch</a>
  */
 public interface EmployeeService {

@@ -25,6 +25,8 @@ import org.jboss.arquillian.extension.guice.testsuite.modules.service.impl.Defau
 
 
 /**
+ * The employee module.
+ *
  * @author <a href="mailto:jmnarloch@gmail.com">Jakub Narloch</a>
  */
 public class EmployeeModule implements Module {

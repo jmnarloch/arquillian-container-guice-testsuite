@@ -16,40 +16,21 @@
  */
 package org.jboss.arquillian.extension.guice.testsuite.modules;
 
+import com.google.inject.Binder;
+import com.google.inject.Module;
+
 /**
- * Represents the employee
+ * A empty module.
  *
  * @author <a href="mailto:jmnarloch@gmail.com">Jakub Narloch</a>
  */
-public class Employee {
+public class EmptyModule implements Module {
 
     /**
-     * Represents the employee name.
+     * {@inheritDoc}
      */
-    private String name;
+    public void configure(Binder binder) {
 
-    /**
-     * Creates new instance of {@link Employee} class.
-     */
-    public Employee() {
-        // empty constructor
-    }
-
-    /**
-     * Retrieves the employee name.
-     *
-     * @return the employee name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Sets the employee name.
-     *
-     * @param name the employee name
-     */
-    public void setName(String name) {
-        this.name = name;
+        // empty
     }
 }
